@@ -43,3 +43,22 @@ xlim([min(x),max(x)])
 
 % Save plot as png
 saveas(gcf,'example_dbr.png')
+
+% Redefine (fixed) mirror
+Mirrw = [repmat([107.7586,181.1594],1,Nstk)];
+fullw = [0,1000,Mirrw,666.6667];
+
+% Wavelengths array
+wvls = linspace(wvl-600,wvl+600,301);
+
+% Loop through wavelengths
+for ii=1:length(wvls)
+   [r,t,x,Nn,E] = tmm(wvls(ii),fulln, fullw);
+   R(ii) = abs(r)^2 * 100;
+end
+
+% Plot reflectance vs wvls
+figure(2)
+plot(wvls,R,'Color','blue')
+ylabel('Reflectance (%)')
+xlabel('Wavelength (nm)')
