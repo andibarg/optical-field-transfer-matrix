@@ -14,3 +14,7 @@ The function 'tmm.m' takes as inputs the wavelength, layer refractive indices <e
 As an example, the script 'example_dbr.m' calculates the field in a lossless dielectric mirror on a glass substrate, where the coating materials are magnesium fluoride (<em>n</em><sub>MgF2</sub> = 1.38) and zinc sulfide (<em>n</em><sub>ZnS</sub> = 2.32). The following figure shows the normalized electric field strength across 8 alternating layers, each with a thickness of <em>n<sub>i</sub> w<sub>i</sub></em> = <em>λ</em>/4, where <em>λ</em> = 1 μm is the wavelength.
 
 ![Screenshot](example_dbr.png)
+
+For the same mirror the following figure shows the reflectance as a function of wavelengths.
+
+![Screenshot](example_dbr_spec.png)
