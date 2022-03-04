@@ -7,6 +7,7 @@ For a thorough derivation of the method see, for instance: C. C. Katsidis, D. I.
 $ git clone https://github.com/andibarg/optical-field-transfer-matrix.git
 $ cd optical-field-transfer-matrix
 ```
+This repository includes implementations both in Matlab (.m files) and in Python (.py file).
 
 ### Usage (Matlab)
 The function 'tmm.m' takes as inputs the wavelength, layer refractive indices <em>n<sub>i</sub></em> and layer widths <em>w<sub>i</sub></em>. It returns the amplitude reflection coefficient <em>r</em> and the transmission coefficient <em>t</em>, as well as arrays to plot the electric field strength <em>E</em> vs position <em>x</em>.
